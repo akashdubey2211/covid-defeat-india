@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Select from 'react-dropdown-select';
-import ShowList from './ShowPincodeList';
+// import ShowList from './ShowPincodeList';
 import ShowDistrictList from './ShowDistrictList';
 import { Button, Grid } from '@material-ui/core';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { ClassRounded } from '@material-ui/icons';
-import Corona from './corona.svg'
+// import { ClassRounded } from '@material-ui/icons';
+// import Corona from './corona.svg'
 const District = () => {
     let [state_list, setStateList] = useState([])
     let [state_id, setStateId] = useState("")
@@ -50,7 +50,7 @@ const District = () => {
     }
 
     let searchButtonClicked = ()=>{
-        if(ageGroup!=""&& district_id!="" && state_id!=""){
+        if(ageGroup!==""&& district_id!=="" && state_id!==""){
             setSearchClicked(true)
 
         }
@@ -90,7 +90,7 @@ const District = () => {
                     style={{width:"50vw", marginBottom:'10px', border:'1px solid white'}}
                 />
                 <Select
-                    
+                    className="select"
                     options={district}
                     onChange={(values) => onChangeDistrict(values)}
                     labelField="district_name"

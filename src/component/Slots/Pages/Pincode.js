@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+
 import TextField from '@material-ui/core/TextField';
-import { Button, Grid, Link } from '@material-ui/core';
+import { Button, Grid} from '@material-ui/core';
 import axios from 'axios';
-import Home from './SlotFind';
+
 import ShowPincodeList from './ShowPincodeList';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
@@ -59,7 +59,7 @@ const Pincode = () => {
         d.sessions.forEach(a=>
             {
                 // console.log(a)
-                if(a["min_age_limit"]==ageGroup){
+                if(a["min_age_limit"]===ageGroup){
                   if(a["available_capacity"] > 0 ){
                     setIsAvailable(true)
                 }
@@ -72,7 +72,7 @@ const Pincode = () => {
 
 
     let SearchPin=()=>{
-        if(myref.current.value.length!=6 ||  ageGroup=="")
+        if(myref.current.value.length!==6 ||  ageGroup==="")
             alert("Enter 6 digit PIN & age")
         else if(!Number(myref.current.value))
             alert("Only Number allowed")

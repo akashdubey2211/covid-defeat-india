@@ -8,7 +8,7 @@ const ShowDistrictList = (props) => {
     let [isAvailable, setIsAvailable] = useState(false)
 
     // console.log(props)
-    var today_date = new Date();
+    var today_date = new Date(); 
     var dd = String(today_date.getDate()).padStart(2, '0');
     var mm = String(today_date.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today_date.getFullYear();
@@ -45,7 +45,7 @@ const ShowDistrictList = (props) => {
         d.sessions.forEach(a=>
             {
               // console.log(d.name+"...."+a["available_capacity"]+"...."+a["min_age_limit"])
-              if(a["min_age_limit"]==props.ageGroup){
+              if(a["min_age_limit"]===props.ageGroup){
                 if(a["available_capacity"] > 0 ){
                   setIsAvailable(true)
                 }
@@ -77,7 +77,7 @@ const ShowDistrictList = (props) => {
                             d.sessions.map(a=>{
                                    { 
                                       return(
-                                        a["min_age_limit"]==props.ageGroup
+                                        a["min_age_limit"]===props.ageGroup
                                         ?
                                             <a target="_blank" href="https://selfregistration.cowin.gov.in/" style={{textDecoration:'none'}}> 
                                             <Grid 

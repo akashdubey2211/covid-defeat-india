@@ -6,7 +6,7 @@ const Report = () => {
 const [data , setData] = useState([]);
     const covidData = async () => {
         try {
-            const result = await fetch("https://api.covid19india.org/data.json");
+            const result = await fetch("https://data.covid19india.org/data.json");
             const actuallData = await result.json();
             setData(actuallData.statewise[0]);
             console.log(actuallData.statewise[0]);
@@ -53,14 +53,14 @@ const [data , setData] = useState([]);
           </div>
         
           <div className="column">
-            <a href="">
+          
               <div className="card three">
                 <div className="course-description">
                   <h3> <span  className="span-p">Total</span> CONFIRMED</h3>
                   <h1 className="data">{data.confirmed}</h1>
                 </div>
               </div>
-            </a>
+            
         </div>
 
         <div className="column">
@@ -86,17 +86,18 @@ const [data , setData] = useState([]);
      </div>
    
      <div className="column">
-       <a href="">
+       
          <div className="card three">
            <div className="course-description">
              <h3> <span  className="span-p">Last</span> LAST UPDATED</h3>
              <h1 className="data">{data.lastupdatedtime}</h1>
            </div>
          </div>
-       </a>
+       
    </div>
        </div>
     )
 }
 
 export default Report;
+  

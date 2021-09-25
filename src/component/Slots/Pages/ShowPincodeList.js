@@ -1,5 +1,5 @@
-import { Button, Grid, Paper, Radio } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
+import { Grid, Paper} from '@material-ui/core';
+import React from 'react';
 import './style.css'
 
 const ShowList = (props) => {
@@ -26,7 +26,7 @@ const ShowList = (props) => {
                                     // console.log(a)
                                     
                                     return (
-                                        a["min_age_limit"]==props.ageGroup
+                                        a["min_age_limit"]===props.ageGroup
                                         ?
                                         <a target="_blank" href="https://selfregistration.cowin.gov.in/" style={{textDecoration:'none'}}> 
                                         <Grid container

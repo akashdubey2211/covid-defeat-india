@@ -1,5 +1,8 @@
 .header-section{
-    margin-top: 4rem;
+    margin-top: 2rem;
+}
+#header{
+    margin-top: 2rem;
 }
 .btn-register{
     background-color: white ; /* Green */
@@ -48,10 +51,10 @@
     float:left;
   
 }
-.swing img {
+/* .swing img {
  
     display: block;
-}
+} */
 .swing:after{
     content: '';
     position: absolute;  
@@ -88,3 +91,213 @@
         width: 100%;
     }
   }
+
+  section {
+    padding: 30px 0;
+    min-height: 80vh;
+  }
+  .section-header {
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+  }
+  
+  .section-header::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #001E6C ;
+  bottom: 0;
+  left: calc(50% - 25px);
+  }
+  
+  .section-header h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+  }
+  
+  .section-header p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #9195a2;
+  }
+  .work-porcess-area {
+  background: #f6f8fc;
+  }
+  
+  .work-porcess-area.white {
+  background: #FFFFFF;
+  }
+  
+  .work-porcess-area .process-info {
+  margin-top: 7px;
+  }
+  
+  .work-porcess-area .process-info .single-process {
+  width: 160px;
+  height: 160px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding-top: 53px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(32, 108, 248, 0.4);
+  -o-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4);
+  -moz-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4);
+  -ms-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4);
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  }
+  
+  /* .work-porcess-area .process-info .single-process:hover {
+  /* -webkit-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4)
+  /* -ms-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4) */
+  /* -moz-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4)
+  -ms-box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4)
+  box-shadow: 0 10px 30px 0 rgba(248, 32, 72, 0.4)
+  } */ */ */
+  
+  .work-porcess-area .process-info .single-process:after {
+  position: absolute;
+  content: "\f101";
+  font-family: "fontawesome";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -65px;
+  color: #001E6C ;
+  }
+  
+  .work-porcess-area .process-info .single-process.first {
+  background: #001E6C ;
+  }
+  
+  .work-porcess-area .process-info .single-process.first i:before {
+  color: #FFFFFF;
+  }
+  
+  .work-porcess-area .process-info .single-process.first h4 {
+  color: #FFFFFF;
+  }
+  
+  .work-porcess-area .process-info .single-process.thard {
+  background: #001E6C ;
+  }
+  
+  .work-porcess-area .process-info .single-process.thard i:before {
+  color: #FFFFFF;
+  }
+  
+  .work-porcess-area .process-info .single-process.thard h4 {
+  color: #FFFFFF;
+  }
+  
+  .work-porcess-area .process-info .single-process.last:after {
+  display: none;
+  }
+  
+  .work-porcess-area .process-info .single-process i {
+  display: block;
+  line-height: 25px;
+  margin-bottom: 12px;
+  }
+  
+  .work-porcess-area .process-info .single-process i:before {
+  font-size: 36px;
+  color: #001E6C ;
+  }
+  
+  .work-porcess-area .process-info .single-process h4 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #001E6C ;
+  }
+  
+  @media only screen and (max-width: 767px) {
+  .work-porcess-area .process-info .single-process::after {
+  display: none;
+  }
+  .work-porcess-area .process-info .single-process{
+  margin-top: 30px;
+  }
+  .work-porcess-area .section-title h2{
+  margin-bottom: 5px;
+  }
+  .section-header h2 {
+  font-size: 30px;
+  }
+  
+  }
+
+  .about {
+    padding: 50px 0;
+}
+
+.about .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+.about .heading h2 span {
+    color: #F24259;
+}
+
+.about .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.about h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.about p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 15px;
+    padding: 0;
+}
+
+.about h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.about h4 i {
+    color: #F24259;
+    margin-right: 10px;
+}

@@ -2,6 +2,11 @@
   "name": "covid-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://akashdubey2211.github.io/covid-defeat-india",
+  "engines": {
+    "node": "v15.14.0",
+    "npm": "7.7.6"
+  },
   "dependencies": {
     "@date-io/date-fns": "^2.11.0",
     "@material-ui/core": "^4.12.3",
@@ -20,13 +25,16 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-tilt": "^0.1.4",
+    "sass": "^1.39.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

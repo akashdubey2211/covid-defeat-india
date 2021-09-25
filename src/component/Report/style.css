@@ -6,16 +6,16 @@
     justify-content: center;
     text-align: center;
     margin: rem;
-    /* animation: txt 0.9s ease-out infinite normal; */
+    animation: txt 1s ease-out infinite normal;
 }
-/* @keyframes txt {
+@keyframes txt {
   0%{
     transform: scale(0.3);
   }
   25%{
     transform: scale(0.6);
   }
-} */
+}
 .case-heading{
     color: #001E6C !important;
     align-items: center;

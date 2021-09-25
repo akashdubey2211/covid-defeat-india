@@ -1,12 +1,12 @@
-import { Button, Paper } from '@material-ui/core';
-import React, { useEffect } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
+import React from 'react';
+import {  Link } from 'react-router-dom';
+// import { makeStyles } from '@material-ui/core/styles';
+
 import img from './svgback.svg'
 import './style.css'
 import Vaccine from '../../../component/assests/checklist.png'
-import Tilt from 'react-tilt';
+
 import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
 const SlotsFind = () => {
     let speak=(x)=>{
@@ -14,22 +14,22 @@ const SlotsFind = () => {
         window.speechSynthesis.cancel();
         window.speechSynthesis.speak(utter);
     }
-    const useStyles = makeStyles((theme) => ({
-        root: {
-        //   flexGrow: 1,
-        margin:"0",
-        padding:"0",
-          width: "100%",
-          height:"71vh",
-        },
+    // const useStyles = makeStyles((theme) => ({
+    //     root: {
+    //     //   flexGrow: 1,
+    //     margin:"0",
+    //     padding:"0",
+    //       width: "100%",
+    //       height:"71vh",
+    //     },
      
-        home: {
-            backgroundColor:"white",
+    //     home: {
+    //         backgroundColor:"white",
           
             
-        },
-      }));
-      const classes = useStyles();
+    //     },
+    //   }));
+    //   const classes = useStyles();
 
     
     speak("Hello, welcome to, covid defeat for vaccine portal")
