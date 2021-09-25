@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/covid-defeat-india/static/css/main.a1be038a.chunk.css",
+    "main.js": "/covid-defeat-india/static/js/main.16b17d7e.chunk.js",
+    "main.js.map": "/covid-defeat-india/static/js/main.16b17d7e.chunk.js.map",
+    "runtime-main.js": "/covid-defeat-india/static/js/runtime-main.036c55fd.js",
+    "runtime-main.js.map": "/covid-defeat-india/static/js/runtime-main.036c55fd.js.map",
+    "static/css/2.6293a573.chunk.css": "/covid-defeat-india/static/css/2.6293a573.chunk.css",
+    "static/js/2.a42c0508.chunk.js": "/covid-defeat-india/static/js/2.a42c0508.chunk.js",
+    "static/js/2.a42c0508.chunk.js.map": "/covid-defeat-india/static/js/2.a42c0508.chunk.js.map",
+    "index.html": "/covid-defeat-india/index.html",
+    "static/css/2.6293a573.chunk.css.map": "/covid-defeat-india/static/css/2.6293a573.chunk.css.map",
+    "static/css/main.a1be038a.chunk.css.map": "/covid-defeat-india/static/css/main.a1be038a.chunk.css.map",
+    "static/js/2.a42c0508.chunk.js.LICENSE.txt": "/covid-defeat-india/static/js/2.a42c0508.chunk.js.LICENSE.txt",
+    "static/media/agency-1.71b8f5ce.svg": "/covid-defeat-india/static/media/agency-1.71b8f5ce.svg",
+    "static/media/c.27b08300.svg": "/covid-defeat-india/static/media/c.27b08300.svg",
+    "static/media/checklist.0351c7e3.png": "/covid-defeat-india/static/media/checklist.0351c7e3.png",
+    "static/media/inj.6ea3b5e6.png": "/covid-defeat-india/static/media/inj.6ea3b5e6.png",
+    "static/media/svgback.3f3cb9a5.svg": "/covid-defeat-india/static/media/svgback.3f3cb9a5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.036c55fd.js",
+    "static/css/2.6293a573.chunk.css",
+    "static/js/2.a42c0508.chunk.js",
+    "static/css/main.a1be038a.chunk.css",
+    "static/js/main.16b17d7e.chunk.js"
+  ]
+}
